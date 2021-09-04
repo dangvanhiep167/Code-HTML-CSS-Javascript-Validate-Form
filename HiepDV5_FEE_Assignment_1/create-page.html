@@ -7,7 +7,10 @@
     <title>Create Interview</title>
     <link rel="stylesheet" href="style.css" />
     <script src="main-jquery.js"></script>
-    <script src="demo-validation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="validation-form.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -21,7 +24,7 @@
         </div>
 
         <div class="content1">
-                <form id="demoForm" action="" method="#" name="demoForm">
+                <form id="demoForm" action="list-page.html" method="#" name="demoForm">
                     <h1>Create Interview</h1>
                     
                     <div class="container-field-namepoll">
@@ -31,15 +34,15 @@
                     <div class="container-xyz">
                         <div class="container-abc">
                             <div class="container-field1">
-                                <input class="stc" type="text" name="question" placeholder="Enter your question" />
+                                <input type="text" name="question" placeholder="Enter your question" />
                             </div>
 
                             <div class="container-field1">
-                                <input  type="checkbox" name="isMandatory"/> Mandatory<br/>
+                                <input type="checkbox" name="isMandatory"/> Mandatory<br/>
                             </div>
 
                             <div class="container-field1">
-                                <input  type="checkbox" name="isSelectMultiple"/> You can select multiple options
+                                <input type="checkbox" name="isSelectMultiple"/> You can select multiple options
                             </div>
 
                             <div class=" container-field-customer ">
@@ -47,7 +50,7 @@
                                 <div class="container-answers">
                                     <div clas="div-answer">
                                         <input type="text" name="answer" placeholder="Type your answer" />
-                                        <input type="button" class="add-button" value="+"/>
+                                        <input  type="button" class="add-button" value="+"/>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +58,7 @@
 
                         <div class="container-abc">                 
                             <div class="container-field1">
-                                <input class="stc" type="text" name="question" placeholder="Enter your question" />
+                                <input type="text" name="question" placeholder="Enter your question" />
                             </div>
 
                             <div class="container-field1">
@@ -66,7 +69,7 @@
                                 <input  type="checkbox" name="isSelectMultiple"/> You can select multiple options
                             </div>
 
-                            <div class=" container-field-customer ">
+                            <div class="container-field-customer">
                                 <span> Possible answers</span>
 
                                 <div class="container-field2">
@@ -89,20 +92,17 @@
                         </div>  
                      </div>
                      <input type="submit" value="Retain" id="btn-submit" class="btn">
+                     
                 </form>
 
                 <div class="container-button-add-question">
                     <button>+ Add question</button>
-                </div>
-
-               
-              
+                </div>          
             </div>
         </div>
 
     </div>
 
-
-
+    <script src="process-javascript-dom.js"></script>
 </body>
 </html>
